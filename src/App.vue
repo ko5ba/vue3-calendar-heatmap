@@ -1,4 +1,5 @@
 <template>
+	<!--
 	<div style="display: flex; align-items: center; justify-content: center; min-height: 100vh;">
 		<h4>Unit Select</h4>
 		<div>
@@ -54,11 +55,12 @@
 			:style="{ 'max-width': orientation === 'vertical' ? '145px' : '675px' }" :tooltip-unit="picked"
 			:vertical="orientation === 'vertical'" />
 		<br>
-		<h4>TooltipFormatter</h4>
+		-->
+	<div style="display: flex; align-items: center; justify-content: center; height: 100vh; width: 100%;">
 		<calendar-heatmap :values="values" :end-date="endDate"
 			:style="{ 'max-width': orientation === 'vertical' ? '145px' : '675px' }"
-			:tooltip-formatter="(c: any, u: any) => c.count ? (c.count / 3600 / 1000) + ' ' + u : 'NÖX'" no-data-text="NIX"
-			:tooltip-unit="picked" :vertical="orientation === 'vertical'" />
+			:tooltip-formatter="(value) => `${value.date.toLocaleDateString('RU-ru')} - ${value.count} активность`"
+			no-data-text="Не было активности" :tooltip-unit="picked" :vertical="orientation === 'vertical'" />
 	</div>
 </template>
 

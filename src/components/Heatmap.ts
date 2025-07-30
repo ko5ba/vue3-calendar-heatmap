@@ -44,12 +44,12 @@ export class Heatmap {
 	// static readonly DEFAULT_RANGE_COLOR_DARK    = [ '#161b22', '#015958', '#008F8C', '#0CABA8', '#0FC2C0' ];
 	// static readonly DEFAULT_RANGE_COLOR_DARK    = [ '#012030', '#13678A', '#45C4B0', '#9AEBA3', '#DAFDBA' ];
 	static readonly DEFAULT_LOCALE: Locale = {
-		months: [ 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ],
-		days  : [ 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat' ],
-		on    : 'on',
-		less  : 'Less',
-		more  : 'More'
-	};
+	months: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
+	days: ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'],
+	less: 'Низкая',
+	more: 'Высокая',
+	on: 'на',
+};
 	static readonly DEFAULT_TOOLTIP_UNIT   = 'contributions';
 	static readonly DAYS_IN_ONE_YEAR       = 365;
 	static readonly DAYS_IN_WEEK           = 7;
